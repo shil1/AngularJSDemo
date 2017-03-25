@@ -1,0 +1,15 @@
+﻿{
+  "files": {
+    "css": {
+
+      "src": "./scss/**/*.scss",
+
+      "dest": "./wwwroot/css",
+
+      "min": "./wwwroot/min/uap.min.css",
+
+      "watch": "src"
+    }
+  }
+
+}
