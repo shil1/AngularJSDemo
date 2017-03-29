@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="wwwroot/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="wwwroot/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="wwwroot/min/uap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="../../Scripts/angular.js"></script>
+    <script src="Scripts/angular-ui-router.min.js"></script>
+    <script src="Scripts/angular-sanitize.min.js"></script>
+    <script src="wwwroot/js/demo.js"></script>
+</head>
+
+<body ng-app="myApp">
+    <div ng-controller="DemoObject as demo" class="form-group aside col-xs-3">
+  
+        <input type="button" value="Next" ui-sref="secondstep" ng-disabled="$state.includes('secondstep')"/>
+        <input type="button" value="Previous" ui-sref="landing" ng-disabled="$state.includes('landing')"/>
+        <ui-view></ui-view>
+    </div>
+</body>
+</html>
+

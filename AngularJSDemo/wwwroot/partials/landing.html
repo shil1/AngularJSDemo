@@ -1,0 +1,16 @@
+﻿<form name="myForm">
+    <label>Name</label>
+    <input type="text" class="form-control" ng-model="demo.name" ng-minlength="3" maxlength="9" ng-pattern="/^[a-zA-Z\s]*$/" required />
+    <label>Age</label>
+    <input type="text" class="form-control" ng-model="demo.age" required />
+    <label>Gender</label>
+    <input type="text" class="form-control" ng-model="demo.gender" required />
+    <input type="button" class="btn" ng-click="demo.addName()" value="Add" ng-disabled="!myForm.$valid" />
+</form>
+
+<div ng-repeat="friend in demo.friends track by $index" ng-if="demo.friends">
+    {{friend.name}}{{friend.age}}{{friend.gender}}
+    <a class="anchor" ng-click="demo.remove(friend.name)">Remove</a>
+</div>
+
+<div ng-if="!demo.friends">No results</div>

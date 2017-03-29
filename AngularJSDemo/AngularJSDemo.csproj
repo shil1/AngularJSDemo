@@ -66,16 +66,25 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="default.html" />
     <Content Include="packages.config" />
+    <Content Include="Scripts\angular-sanitize.min.js" />
+    <Content Include="Scripts\angular-ui-router.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="package.json" />
+    <Content Include="Scripts\jquery.min.js" />
     <Content Include="scss\demo.scss" />
     <Content Include="scss\vars.scss" />
+    <Content Include="wwwroot\css\bootstrap-theme.min.css" />
+    <Content Include="wwwroot\css\bootstrap.min.css" />
     <Content Include="wwwroot\css\demo.css" />
     <Content Include="wwwroot\css\vars.css" />
+    <Content Include="wwwroot\js\demo.js" />
     <Content Include="wwwroot\min\uap.min.css" />
-    <Content Include="wwwroot\views\Jumpstart.html" />
     <Content Include="gulpconfig.json" />
+    <Content Include="wwwroot\partials\component1.html" />
+    <Content Include="wwwroot\partials\component2.html" />
+    <Content Include="wwwroot\partials\landing.html" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,4 +1,9 @@
 ﻿@import'vars.scss';
-body{
-    background:$header-background;
+
+.anchor{
+    color:black!important;
+    &:hover{
+        color:yellow!important;
+    }
 }
+
